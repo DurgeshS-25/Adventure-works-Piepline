@@ -1,0 +1,51 @@
+
+Interview questions that can be asked for this project
+
+1. Data redundancy 
+2. 
+
+* Reasons for doing whatever is done 
+1. GRS: this is a default setting that is found in the redundancy option of the data lake/blob storage, what this does is it replicates your data over different region/geography.
+   But we want LRS as this will store the replica of the data in the same data center.
+2. Blob Storage: In a blob storage we have containers where we store file, but here we cannot create hierarchy of folders. This means that we cannot have folders within the container in a blob storage.
+   Data Lake: Here we can have containers within a data lake and in each container we can create hierarchy of folders i.e. containers consisting of folders for storage. 	   
+3. Ques are something that helps in streaming of data.
+4. File share- provide one stop solution to store all the files for the organization
+5. Ques- This is service which helps working with streaming data. Example storing of messages, these can be in any format
+6. Tables - basically databases ( structured and semi structured i.e. NoSQL and SQL)
+Azure Project
+7. Base url and relative url, the base url is till the .com and relative is the url ahead of .com 
+
+Dataset overview
+
+Returns and sales are Fact table
+also
+The following are our Dimension tables:
+Calendar (time dimension)
+Customer 
+Product category
+Product subcategories 
+Products
+
+Dimensions are used for aggregation or to use contextual information about our fact table 
+
+
+Steps for starting the project 
+Azure portal
+1. Create a resource group 
+2. Now we create a resource group 
+3. We create a storage account for data lake 
+4. We change the redundancy from Geo-redundancy Storage(GRS) to locally-redundant storage (LRS)*1
+5. We change the setting of the Storage from blob storage to data lake by enabling "Hierarchical Name space"*2
+6. We create a Data factory 
+7. We then create a container, so there will be a container for each of the zones i.e. one container for bronze one for gold and one for silver.
+8. As we launch the azure data factory we create our zones.
+9. Before that we make sure the data is properly stored in the data lake * 3,4,5,6
+10. Now we go on creating containers for different zones.
+11. Creating a pipeline in ADF.
+12. The first pipeline we are creating is the git-to-raw pipeline.
+13. Now first we get the copy data activity 
+14. Configuring source and sink 
+15. Now we first get the raw data that we have uploaded in the git repo for the source in adf*7 
+16. First we are trying to create a static data source using the http in the linked services named the linked service as "httplinkedservice"
+This is how we create a static pipeline 
