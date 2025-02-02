@@ -68,8 +68,12 @@ Setting up data bricks
 12. First we read all the sales data from 2015-2017 in one dataframe i.e. df_sales.
 13. Then the trasnformation that is going to be done here will be getting the stock date in time stamp date format, in the Order number column we will replace the first s with t 
 14. We  will also get a multiply column order line column with order quantity this is done just to understand the multiplication function.
-15. Then we perform aggregation like Group by .
-16. We are perfomring group by for sales analysis on the column OrderDate 
+15. Then we perform aggregation like Group by on order date and aggregating it on count of OrderNumber to get the total orders  .
+16. We also get the composition of sub-categories 
+17. We also display how many regions have participated.
+--- Now we are using Asure Synaps-----
+
+
 
 
 
