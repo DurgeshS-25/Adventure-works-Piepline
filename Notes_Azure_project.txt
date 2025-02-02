@@ -49,3 +49,33 @@ Azure portal
 15. Now we first get the raw data that we have uploaded in the git repo for the source in adf*7 
 16. First we are trying to create a static data source using the http in the linked services named the linked service as "httplinkedservice"
 This is how we create a static pipeline 
+1. We created paramters for each the folder, the file and the relative url
+2. After that we configure the lookup function for with the json file that has all the parameters which we will pass through 
+3. after this is configured we ll put the copy activity inside of the lookup activity and giving the dynaic parameters their values
+4. after this is done we will run the pipeline 
+Setting up data bricks 
+1. Here while setting up data bricks.
+2. Then we start building the clusters.
+3. While configuring the cluster, we keep the compute as a single node.
+4. Here we will be transforming the raw data that is stored in the bronze folder 
+5. We connect our storage with databricks using the Microsoft Entra ID 
+6. This is done by creating the application and then assigning a role to connect with the databricks 
+7. After creating a cluster we make a notebook in the workspace adn then connect it with the data lake
+8. After we have made the connection we do the trasnformation to the required dataset namely calendar, Customer,Products, Sales
+9. For calendar we seperate out the month and the year and then inject it in the silver folder present in the data lake of azure, we store it in the parque file format.
+10. For customer we concatinated the first last and the prfix name in a column called Fullname and injested it back to the silver folder in a parque format file.
+11. For Products we just take the first word of the productName and the ProductSKU and then ingest it to the silver folder in the azure data lake 
+12. First we read all the sales data from 2015-2017 in one dataframe i.e. df_sales.
+13. Then the trasnformation that is going to be done here will be getting the stock date in time stamp date format, in the Order number column we will replace the first s with t 
+14. We  will also get a multiply column order line column with order quantity this is done just to understand the multiplication function.
+15. Then we perform aggregation like Group by .
+16. We are perfomring group by for sales analysis on the column OrderDate 
+
+
+
+
+
+
+
+
+
