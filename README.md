@@ -11,7 +11,12 @@ This repository contains the implementation of a scalable **ETL pipeline** for p
 Azure_Project/
 │
 ├── Dataset/                     # Contains the dataset used for the project
-├── Silver_Layer_Script/         # Scripts for processing data into the Silver Zone
+├── Silver_Layer_Script/         # Contains scripts for processing data into the Silver Zone
+│   ├── Gold View/               # Contains scripts for creating Gold View data
+│   │   ├── Create External Tables.sql  # sql script for creating external tables
+│   │   ├── Gold_View.sql # This consists of all the view scripts for the external tables
+│   │   ├── Gold_schema.sql # this consits of a single script for creating the gold schema
+│   ├── Silver Layer Script.ipynb  # Jupyter notebook for Silver Layer transformations
 ├── .gitignore                   # Git ignore file for sensitive and unnecessary files
 ├── Notes_Azure_project.txt      # Notes and documentation for the project setup
 ├── README.md                    # Project documentation (this file)
@@ -33,6 +38,7 @@ Azure_Project/
 ### Prerequisites
 - An **Azure account** with permissions to create and manage resources.
 - **Power BI Desktop** installed on your local system.
+- Python 3.8+ installed with dependencies listed in `requirements.txt`.
 
 ### Steps
 
@@ -44,8 +50,9 @@ Azure_Project/
    - Set up pipelines to load raw data into the Bronze Zone.
 
 3. **Run Databricks Notebooks**
-   - Navigate to the **Silver_Layer_Script/** folder for data transformation scripts.
-   - Execute transformations for datasets like Customer, Product, and Sales.
+   - Navigate to the `Silver_Layer_Script/` folder for data transformation scripts.
+   - Execute the `Silver Layer Script.ipynb` notebook for processing the Silver Layer.
+   - Utilize the scripts in the `Gold View/` folder for creating Gold Layer views.
 
 4. **Configure Synapse Analytics**
    - Run SQL scripts to create external tables and views for Silver and Gold Zones.
@@ -74,4 +81,4 @@ Azure_Project/
 ## Author
 **Durgesh Sakhardande**  
 - LinkedIn: [linkedin.com/in/durgesh-s/](https://linkedin.com/in/durgesh-s/)  
-- GitHub: [github.com/DurgeshS-25](https://github.com/DurgeshS-25)
+- GitHub: [github.com/DurgeshS25-MLE](https://github.com/DurgeshS25-MLE)
