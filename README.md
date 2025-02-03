@@ -81,3 +81,7 @@ Azure_Project/
 **Durgesh Sakhardande**  
 - LinkedIn: [linkedin.com/in/durgesh-s/](https://linkedin.com/in/durgesh-s/)  
 - GitHub: [github.com/DurgeshS25-MLE](https://github.com/DurgeshS25-MLE)
+
+**Sudarshan Paranjape**
+- Linkedin: [Linkedin.com/in/sudarshanp4](https://www.linkedin.com/in/sudarshanp4/)
+- Gihub: 
