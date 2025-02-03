@@ -8,7 +8,7 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://sotrageforproject.blob.core.windows.net/silver/AdventureWorks_Calendar/',
+            BULK 'https://storageforazproject.blob.core.windows.net/silver/AdventureWorks_Calendar',
             FORMAT = 'PARQUET'
         ) as QUER1
 
@@ -23,7 +23,7 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://sotrageforproject.blob.core.windows.net/silver/AdventureWorks_Customers/',
+            BULK 'https://storageforazproject.blob.core.windows.net/silver/AdventureWorks_Customers/',
             FORMAT = 'PARQUET'
         ) as QUER1
 
@@ -39,14 +39,14 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://sotrageforproject.blob.core.windows.net/silver/AdventureWorks_Products/',
+            BULK 'https://storageforazproject.blob.core.windows.net/silver/AdventureWorks_Products/',
             FORMAT = 'PARQUET'
         ) as QUER1
 
 
-------------------------
--- CREATE VIEW RETURNS
-------------------------
+-- ------------------------
+-- -- CREATE VIEW RETURNS
+-- ------------------------
 CREATE VIEW gold.returns
 AS
 SELECT 
@@ -54,14 +54,14 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://sotrageforproject.blob.core.windows.net/silver/AdventureWorks_Returns/',
+            BULK 'https://storageforazproject.blob.core.windows.net/silver/AdventureWorks_Returns/',
             FORMAT = 'PARQUET'
         ) as QUER1
         
 
-------------------------
--- CREATE VIEW RETURNS
-------------------------
+-- ------------------------
+-- -- CREATE VIEW RETURNS
+-- ------------------------
 CREATE VIEW gold.returns
 AS
 SELECT 
@@ -69,14 +69,14 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://sotrageforproject.blob.core.windows.net/silver/AdventureWorks_Returns/',
+            BULK 'https://storageforazproject.blob.core.windows.net/silver/AdventureWorks_Returns/',
             FORMAT = 'PARQUET'
         ) as QUER1
 
 
-    ------------------------
--- CREATE VIEW SALES
-------------------------
+--     ------------------------
+-- -- CREATE VIEW SALES
+-- ------------------------
 CREATE VIEW gold.sales
 AS
 SELECT 
@@ -84,14 +84,14 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://sotrageforproject.blob.core.windows.net/silver/AdventureWorks_Sales/',
+            BULK 'https://storageforazproject.blob.core.windows.net/silver/AdventureWorks_Sales/',
             FORMAT = 'PARQUET'
         ) as QUER1
 
 
-------------------------
--- CREATE VIEW SUBCAT
-------------------------
+-- ------------------------
+-- -- CREATE VIEW SUBCAT
+-- ------------------------
 CREATE VIEW gold.subcat
 AS
 SELECT 
@@ -99,15 +99,15 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://sotrageforproject.blob.core.windows.net/silver/AdventureWorks_SUbCategories/',
+            BULK 'https://storageforazproject.blob.core.windows.net/silver/AdventureWorks_Subcategories/',
             FORMAT = 'PARQUET'
         ) as QUER1
 
 
 
-------------------------
--- CREATE VIEW TERRITORIES
-------------------------
+-- ------------------------
+-- -- CREATE VIEW TERRITORIES
+-- ------------------------
 CREATE VIEW gold.territories
 AS
 SELECT 
@@ -115,7 +115,7 @@ SELECT
 FROM 
     OPENROWSET
         (
-            BULK 'https://sotrageforproject.blob.core.windows.net/silver/AdventureWorks_Territories/',
+            BULK 'https://storageforazproject.blob.core.windows.net/silver/AdventureWorks_Territories/',
             FORMAT = 'PARQUET'
         ) as QUER1
 

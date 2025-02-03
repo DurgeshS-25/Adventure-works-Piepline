@@ -72,7 +72,12 @@ Setting up data bricks
 16. We also get the composition of sub-categories 
 17. We also display how many regions have participated.
 --- Now we are using Asure Synaps-----
-
+1. Here we create our own database serverless called aw-database
+2. here as we have given the required roles to ourselves and the Synaps analytics managed identity role we create views of the data that we had stored in the silver layer
+3. Then we query these view to make sure these are the right data that is being created as a view.
+5. For creating external tables we first create a scoped credential then we create a external data source and then we also put the location where we want to store the data in the gold folder
+also making a external data source gold 
+6. Then we make a external sales table and then query it to check if the data is valid 
 
 
 
