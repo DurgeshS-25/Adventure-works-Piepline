@@ -74,4 +74,4 @@ Azure_Project/
 ## Author
 **Durgesh Sakhardande**  
 - LinkedIn: [linkedin.com/in/durgesh-s/](https://linkedin.com/in/durgesh-s/)  
-- GitHub: [github.com/DurgeshS25-MLE](https://github.com/DurgeshS25-MLE)
+- GitHub: [github.com/DurgeshS-25](https://github.com/DurgeshS-25)
