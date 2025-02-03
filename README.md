@@ -38,7 +38,6 @@ Azure_Project/
 ### Prerequisites
 - An **Azure account** with permissions to create and manage resources.
 - **Power BI Desktop** installed on your local system.
-- Python 3.8+ installed with dependencies listed in `requirements.txt`.
 
 ### Steps
 
