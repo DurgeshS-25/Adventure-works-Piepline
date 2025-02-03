@@ -78,6 +78,7 @@ Setting up data bricks
 5. For creating external tables we first create a scoped credential then we create a external data source and then we also put the location where we want to store the data in the gold folder
 also making a external data source gold 
 6. Then we make a external sales table and then query it to check if the data is valid 
+7. After this we go ahead connecting these tables with power bi for basic visualization
 
 
 
