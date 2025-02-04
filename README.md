@@ -1,5 +1,4 @@
-# Azure_Project
-
+# Adventure works Pipeline
 ## Overview
 This repository contains the implementation of a scalable **ETL pipeline** for processing and transforming data using **Azure Data Factory**, **Azure Databricks**, and **Azure Synapse Analytics**. The pipeline follows the **medallion architecture** (Bronze, Silver, and Gold zones) and provides insightful visualizations using Power BI.
 
