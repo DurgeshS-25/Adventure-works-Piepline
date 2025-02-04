@@ -104,7 +104,3 @@ Azure_Project/
   - [LinkedIn](https://www.linkedin.com/in/sudarshanp4/)
   - [GitHub](https://github.com/sudarshan4120)
 
----
-
-## Contact
-If you have any questions or feedback, feel free to reach out via LinkedIn or GitHub.
