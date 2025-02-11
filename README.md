@@ -3,6 +3,14 @@
 This repository contains the implementation of a scalable **ETL pipeline** for processing and transforming data using **Azure Data Factory**, **Azure Databricks**, and **Azure Synapse Analytics**. The pipeline follows the **medallion architecture** (Bronze, Silver, and Gold zones) and provides insightful visualizations using Power BI.
 
 ---
+## Contributors
+- **Durgesh Sakhardande**
+  - [LinkedIn](https://linkedin.com/in/durgesh-s/)
+  - [GitHub](https://github.com/DurgeshS25-MLE)
+
+- **Sudarshan Paranjape**
+  - [LinkedIn](https://www.linkedin.com/in/sudarshanp4/)
+  - [GitHub](https://github.com/sudarshan4120)
 
 ## Repository Structure
 ```
@@ -94,12 +102,5 @@ Azure_Project/
 
 ---
 
-## Contributors
-- **Durgesh Sakhardande**
-  - [LinkedIn](https://linkedin.com/in/durgesh-s/)
-  - [GitHub](https://github.com/DurgeshS25-MLE)
 
-- **Sudarshan Paranjape**
-  - [LinkedIn](https://www.linkedin.com/in/sudarshanp4/)
-  - [GitHub](https://github.com/sudarshan4120)
 
