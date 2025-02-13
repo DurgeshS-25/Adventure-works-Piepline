@@ -6,7 +6,7 @@ This repository contains the implementation of a scalable **ETL pipeline** for p
 ## Contributors
 - **Durgesh Sakhardande**
   - [LinkedIn](https://linkedin.com/in/durgesh-s/)
-  - [GitHub]([https://github.com/DurgeshS25-MLE](https://github.com/DurgeshS-25))
+  - [GitHub](https://github.com/DurgeshS-25)
 
 - **Sudarshan Paranjape**
   - [LinkedIn](https://www.linkedin.com/in/sudarshanp4/)
